@@ -1,0 +1,327 @@
+* {margin: 0; padding: 0;}
+
+@font-face {
+	font-family: myriad-set-pro;
+	src: url(./fonts/myriad-set-pro_medium.ttf);
+}
+
+p, h2 {
+	font-family: myriad-set-pro;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	position: relative;
+	display: flex;
+	background-color: #333333;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+header * {
+	margin: auto;
+}
+
+header a:hover {
+	opacity: 0.7;
+}
+
+/*la barre de recherche*/
+header input {
+	opacity: 1;
+	width: 50%;
+	height: 20px;
+	width: 50%;
+}
+
+#recherche {
+	display: none;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	width: 100%;
+	z-index: 8;
+}
+
+#recherche a img {
+	margin-left: 80px;
+}
+
+#recherche > img {
+	margin-left: 300px;
+}
+
+#recherche * {
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+#recherche:target ~ a {
+	opacity: 0;
+}
+
+#recherche:target {
+	display: inline-block;
+}
+
+/*les grandes images*/
+#majeur {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+#left, #right {
+	margin: 30px;
+}
+
+#right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#right > img {
+	margin-bottom: 20px;
+}
+
+a {
+	cursor: pointer;
+}
+
+p {
+	text-align: center;
+	font-family: ;
+}
+
+#film img {
+	height: 20px;
+	margin-top: 3px;
+}
+
+#right > p {
+	font-size: 30px;
+	color: #383838;
+}
+
+#film p {
+	position: relative;
+	color: #6fa7c4;
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+.souligne:after {
+	content: "";
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	bottom: -2px;
+	background-color: #6fa7c4;
+}
+
+.souligne:hover:after {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+#film {
+	margin-top: 30px;
+	display: flex;
+}
+
+/*les quatre images*/
+#four {
+	display: flex;
+}
+
+.line {
+	width: 25%;
+/*	overflow: hidden;
+*/}
+
+.line img {
+/*	height: 100%;
+*/	height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+
+/*ligne bleue*/
+#blue {
+	position: relative;
+	display: flex;
+	color: #6fa7c4;
+	margin: 20px;
+	justify-content: center;
+}
+
+#blue p {
+	position: relative;
+}
+
+#blue img {
+	margin-left: 2px;
+	margin-top: 1px;
+}
+
+/*footer*/
+footer {
+	background-color: #e6e6e6;
+}
+
+
+/*tous les liens*/
+#architecture {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 200px 40px 200px;
+}
+
+#architecture span * {
+	margin-top: 5px;
+}
+
+#architecture p {
+	font-size: 11px;
+	color: #737373;
+	text-align: left;
+}
+
+#architecture h2 {
+	font-size: 11px;
+	color: #4d4d4d;
+	text-align: left;
+}
+
+/*shop*/
+#shop {
+	position: relative;
+	display: flex;
+	justify-content: left;
+	margin: 20px 200px;
+	color: #b3b3b3;
+	font-size: 11px;
+}
+
+#shop em {
+	color: #6fa7c4;
+}
+
+#shop:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #bfbfbf;
+	bottom: -8px;
+}
+
+/*liens*/
+#links {
+	display: flex;
+	margin: 0 200px 20px 200px;
+	justify-content: space-between;
+	font-size: 11px;
+}
+
+#links p {
+	color: #b3b3b3;
+}
+
+#links em {
+	color: #737373;
+}
+
+#usa {
+	display: flex;
+}
+
+#usa p {
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+/*
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+/* clearfix */
+/*
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}*/
+/*               End of Setup             */
